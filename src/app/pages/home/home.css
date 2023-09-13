@@ -1,0 +1,46 @@
+body {
+    background: rgb(26, 52, 42);
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fade-in {
+    animation: fadeIn 2s ease-out;
+  }
+  
+  .center-div {
+      text-align: center; 
+  }
+
+  .center-div ul {
+      list-style: none; 
+      padding: 0; 
+      display: flex;
+      justify-content: center; 
+  }
+
+  .center-div li {
+      margin: 30px; 
+  }
+  
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 1s ease-in-out;
+}
+
