@@ -7,52 +7,54 @@ import Breadcrumbs from '@/app/components/breadcrumbs/breadcrumbs';
 import React from 'react';
 import Achievements from '@/app/components/achievements/achievement';
 export default function Home() {
-  const containerStyle = {
+  const containerStyle: React.CSSProperties = {
     textAlign: 'center',
-    padding: '20px', 
-    borderRadius: '10px', 
-    boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)', 
-};
-
-const iconContainerStyle = {
+    padding: '20px',
+    borderRadius: '10px',
+    boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)',
+  };
+  
+  const iconContainerStyle: React.CSSProperties = {
     display: 'flex',
     flexWrap: 'wrap',
     justifyContent: 'center',
-    gap: '50px', 
-    marginTop: '20px', 
-};
-
-const logoStyle = {
+    gap: '50px',
+    marginTop: '20px',
+  };
+  
+  const logoStyle: React.CSSProperties = {
     width: '150px',
     height: '120px',
-};
-
-const resizedLogoStyle = {
-   
+  };
+  
+  const resizedLogoStyle: React.CSSProperties = {
     ...logoStyle,
     backgroundColor: 'transparent',
     padding: '10px',
-    borderRadius: '8px', 
-    boxShadow: '0px 2px 5px rgba(0, 255, 0, 0.8)', 
-    
-};
-
-const iconsWithTitles = [
-  { name: "androidstudio", title: "Android Studio" },
-  { name: "css3", title: "CSS3" },
-  { name: "html5", title: "HTML5" },
-  { name: "java", title: "Java" },
-  { name: "javascript", title: "Javascript" },
-  { name: "laravel", title: "Laravel" },
-  { name: "nodejs", title: "NodeJS" },
-  { name: "php", title: "PHP" },
-  { name: "python", title: "Python" },
-  { name: "sqlite", title: "SQL lite" },
-  { name: "tailwindcss", title: "TailwindCSS" },
-  { name: "typescript", title: "Typescript" },
-    
-    
-];
+    borderRadius: '8px',
+    boxShadow: '0px 2px 5px rgba(0, 255, 0, 0.8)',
+  };
+  
+  interface IconWithTitle {
+    name: string;
+    title: string;
+  }
+  
+  const iconsWithTitles: IconWithTitle[] = [
+    { name: 'androidstudio', title: 'Android Studio' },
+    { name: 'css3', title: 'CSS3' },
+    { name: 'html5', title: 'HTML5' },
+    { name: 'java', title: 'Java' },
+    { name: 'javascript', title: 'Javascript' },
+    { name: 'laravel', title: 'Laravel' },
+    { name: 'nodejs', title: 'NodeJS' },
+    { name: 'php', title: 'PHP' },
+    { name: 'python', title: 'Python' },
+    { name: 'sqlite', title: 'SQL lite' },
+    { name: 'tailwindcss', title: 'TailwindCSS' },
+    { name: 'typescript', title: 'Typescript' },
+  ];
+  
   return (
     <>
     <Navigation/>
