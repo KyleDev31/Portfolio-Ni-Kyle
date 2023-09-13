@@ -197,6 +197,7 @@ export default function Home() {
     </div>
   </section>
 </main>
+<main>
                 <div id="techstackpage" className="bg-lime-100 techstack-container mb-30">
                 <div className="content-container " style={containerStyle}>
                     <h1 className="title text-6xl font-bold text-lime-900 italic" style={{ textShadow: "0 3px 0px rgba(0, 0, 0, 0.8)" }}>TechStack</h1>
@@ -210,7 +211,8 @@ export default function Home() {
 ))}
      </div>
      </div>
-     </div> 
+     </div>
+     </main> 
                 <main>
                 <section id="contactpage" className="bg-green-50 dark:bg-green-900">
                 <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
